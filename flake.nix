@@ -23,8 +23,9 @@
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
         pkgs.appimageTools.wrapType2 {
-          inherit version src;
+          inherit src;
           pname = name;
+          version = version;
           extraInstallCommands = ''
             install -m 444 -D ${appimageContents}/thorium-browser.desktop $out/share/applications/thorium-browser.desktop
             install -m 444 -D ${appimageContents}/thorium.png $out/share/icons/hicolor/512x512/apps/thorium.png
@@ -44,8 +45,9 @@
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
         pkgs.appimageTools.wrapType2 {
-          inherit version src;
+          inherit src;
           pname = name;
+          version = version;
           extraInstallCommands = ''
             install -m 444 -D ${appimageContents}/thorium-browser.desktop $out/share/applications/thorium-browser.desktop
             install -m 444 -D ${appimageContents}/thorium.png $out/share/icons/hicolor/512x512/apps/thorium.png
@@ -65,8 +67,9 @@
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
         pkgs.appimageTools.wrapType2 {
-          inherit version src;
+          inherit src;
           pname = name;
+          version = version;
           extraInstallCommands = ''
             install -m 444 -D ${appimageContents}/thorium-browser.desktop $out/share/applications/thorium-browser.desktop
             install -m 444 -D ${appimageContents}/thorium.png $out/share/icons/hicolor/512x512/apps/thorium.png
@@ -86,8 +89,9 @@
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
         pkgs.appimageTools.wrapType2 {
-          inherit version src;
+          inherit src;
           pname = name;
+          version = version;
           extraInstallCommands = ''
             install -m 444 -D ${appimageContents}/thorium-browser.desktop $out/share/applications/thorium-browser.desktop
             install -m 444 -D ${appimageContents}/thorium.png $out/share/icons/hicolor/512x512/apps/thorium.png
