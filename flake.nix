@@ -23,7 +23,8 @@
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
         pkgs.appimageTools.wrapType2 {
-          inherit name version src;
+          inherit version src;
+          pname = name;
           extraInstallCommands = ''
             install -m 444 -D ${appimageContents}/thorium-browser.desktop $out/share/applications/thorium-browser.desktop
             install -m 444 -D ${appimageContents}/thorium.png $out/share/icons/hicolor/512x512/apps/thorium.png
@@ -43,7 +44,8 @@
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
         pkgs.appimageTools.wrapType2 {
-          inherit name version src;
+          inherit version src;
+          pname = name;
           extraInstallCommands = ''
             install -m 444 -D ${appimageContents}/thorium-browser.desktop $out/share/applications/thorium-browser.desktop
             install -m 444 -D ${appimageContents}/thorium.png $out/share/icons/hicolor/512x512/apps/thorium.png
@@ -63,7 +65,8 @@
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
         pkgs.appimageTools.wrapType2 {
-          inherit name version src;
+          inherit version src;
+          pname = name;
           extraInstallCommands = ''
             install -m 444 -D ${appimageContents}/thorium-browser.desktop $out/share/applications/thorium-browser.desktop
             install -m 444 -D ${appimageContents}/thorium.png $out/share/icons/hicolor/512x512/apps/thorium.png
@@ -83,7 +86,8 @@
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
         pkgs.appimageTools.wrapType2 {
-          inherit name version src;
+          inherit version src;
+          pname = name;
           extraInstallCommands = ''
             install -m 444 -D ${appimageContents}/thorium-browser.desktop $out/share/applications/thorium-browser.desktop
             install -m 444 -D ${appimageContents}/thorium.png $out/share/icons/hicolor/512x512/apps/thorium.png
