@@ -20,7 +20,7 @@
           url = "https://github.com/Alex313031/thorium/releases/download/M130.0.6723.174/Thorium_Browser_130.0.6723.174_AVX.AppImage";
           sha256 = "sha256-23Vq+MDoV1ePkcVVy5SHWX6QovFUKxDdsgteWfG/i1U=";
         };
-        appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
+        appimageContents = pkgs.appimageTools.extractType2 { pname = name; version = version; src = src; };
       in
         pkgs.appimageTools.wrapType2 {
           inherit src;
@@ -42,7 +42,7 @@
           url = "https://github.com/Alex313031/thorium/releases/download/M130.0.6723.174/Thorium_Browser_130.0.6723.174_AVX2.AppImage";
           sha256 = "sha256-Ej7OIdAjYRmaDlv56ANU5pscuwcBEBee6VPZA3FdxsQ=";
         };
-        appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
+        appimageContents = pkgs.appimageTools.extractType2 { pname = name; version = version; src = src; };
       in
         pkgs.appimageTools.wrapType2 {
           inherit src;
@@ -64,7 +64,7 @@
           url = "https://github.com/Alex313031/thorium/releases/download/M130.0.6723.174/Thorium_Browser_130.0.6723.174_SSE3.AppImage";
           sha256 = "sha256-6qHCijDhAk7gXJ2TM774gVgW82AhexFlXFG1C0kfFoc=";
         };
-        appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
+        appimageContents = pkgs.appimageTools.extractType2 { pname = name; version = version; src = src; };
       in
         pkgs.appimageTools.wrapType2 {
           inherit src;
@@ -86,7 +86,7 @@
           url = "https://github.com/Alex313031/thorium/releases/download/M130.0.6723.174/Thorium_Browser_130.0.6723.174_SSE4.AppImage";
           sha256 = "sha256-v5GGcu/bLJMc2f4Uckcn+ArgnnLL/jrT+01iw/105iY=";
         };
-        appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
+        appimageContents = pkgs.appimageTools.extractType2 { pname = name; version = version; src = src; };
       in
         pkgs.appimageTools.wrapType2 {
           inherit src;
